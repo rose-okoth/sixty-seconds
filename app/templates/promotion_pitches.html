@@ -2,11 +2,12 @@
 {% import 'macros.html' as macro %}
 
 {%block content%}
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ranga" rel="stylesheet">
-<div class="jumbotron text-center" style="background-color: #E63462; color: #fff; padding: 100px 25px; font-family: 'Indie Flower', cursive;">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<div class="jumbotron text-center" style="background-color: #E63462; color: #fff; padding: 100px 25px; font-family: 'Patrick Hand', cursive;">
     <h1>Promotion Pitches</h1>
 </div>
-<div class="container" style="font-family: 'Indie+Flower', cursive;">
+<div class="container" style="font-family: 'Patrick Hand', cursive;">
     <hr>
     <div class="row">
         {{macro.displayPitches(pitches)}}
