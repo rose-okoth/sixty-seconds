@@ -2,13 +2,13 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
-    <div class="container">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<div class="container" style="font-family: 'Indie+Flower', cursive;">
         <div class="col-md-12">
             <h3>Create a pitch</h3>
             <hr>
             {{ wtf.quick_form(pitch_form) }}
         </div>
-
-    </div>
+</div>
 
 {% endblock %}
