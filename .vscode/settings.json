@@ -1,0 +1,15 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test.py"
+    ],
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.unittestEnabled": false,
+    "python.pythonPath": "virtual\\Scripts\\python.exe",
+    "python.unitTest.promptToConfigure": false
+}
