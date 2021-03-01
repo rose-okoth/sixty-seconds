@@ -2,10 +2,14 @@
 
 <!-- Navbar block  -->
 {% block navbar %}
-    {% include 'navbar.html' %}
+  {% include 'navbar.html' %}
 {% endblock %}
 
 {%block styles %}
   {{super()}}
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ranga" rel="stylesheet">
 {% endblock %}
+
+{% block footer %}
+  {% include 'footer.html' %}
+{% enblock %}
