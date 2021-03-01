@@ -4,21 +4,23 @@
 
 {%block styles%}
     {{ super() }}
-    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {%endblock%}
 <!-- Content block -->
 {%block content%}
-<div class="jumbotron text-center" style="background-color: #E63462; color: #fff; padding: 55px 25px; font-family: 'Monoton', cursive;">
+<div class="jumbotron text-center" style="background-color: rgb(56, 35, 35); color: #fff; padding: 55px 25px; font-family: 'Niconne', cursive;
+">
     <h1>One Minute Pitch</h1>
 </div>
-<div class="container" style="padding-bottom: 20px;">
+<div class="container" style="padding-bottom: 20px; font-family: 'Patrick Hand', cursive;">
     <a href="{{url_for('main.new_pitch')}}" class="btn btn-success">Create pitch</a>
 </div>
 
-<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+<div class="container" style= "font-family: 'Patrick Hand', cursive;">
     <div class="row">
         <div class="col-md-4">
             <div class="well well-lg">
