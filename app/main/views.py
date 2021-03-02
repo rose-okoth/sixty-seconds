@@ -21,8 +21,9 @@ def index():
     project_pitches = Pitch.get_pitches('project')
     advertisement_pitches = Pitch.get_pitches('advertisement')
     school_pitches = Pitch.get_pitches('school')
+    promotion_pitches = Pitch.get_pitches('promotion')
 
-    return render_template('index.html',title = title, interview = interview_pitches, project = project_pitches, advertisement = advertisement_pitches, school = school_pitches)
+    return render_template('index.html',title = title, interview = interview_pitches, project = project_pitches, advertisement = advertisement_pitches, school = school_pitches, promotion = promotion_pitches)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -111,6 +112,14 @@ def school_pitches():
     pitches = Pitch.get_pitches('school')
 
     return render_template("school_pitches.html", pitches = pitches)
+
+@main.route('/pitches/promotion_pitches')
+def promotion_pitches():
+
+    pitches = Pitch.get_pitches('promotion')
+
+    return render_template("promotion_pitches.html", pitches = pitches)
+
 
 @main.route('/pitch/<int:id>', methods = ['GET','POST'])
 def pitch(id):
