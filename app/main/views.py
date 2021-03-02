@@ -14,15 +14,15 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    title = 'Home - Welcome to Perfect Pitch'
+    title = 'Sixty Seconds - The One Minute Change'
 
     # Getting reviews by category
-    interview_piches = Pitch.get_pitches('interview')
-    product_piches = Pitch.get_pitches('product')
+    interview_pitches = Pitch.get_pitches('interview')
+    project_pitches = Pitch.get_pitches('project')
     promotion_pitches = Pitch.get_pitches('promotion')
 
 
-    return render_template('index.html',title = title, interview = interview_piches, product = product_piches, promotion = promotion_pitches)
+    return render_template('index.html',title = title, interview = interview_pitches, product = project_pitches, promotion = promotion_pitches)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -91,12 +91,12 @@ def interview_pitches():
 
     return render_template("interview_pitches.html", pitches = pitches)
 
-@main.route('/pitches/product_pitches')
-def product_pitches():
+@main.route('/pitches/project_pitches')
+def project_pitches():
 
     pitches = Pitch.get_pitches('product')
 
-    return render_template("product_pitches.html", pitches = pitches)
+    return render_template("project_pitches.html", pitches = pitches)
 
 @main.route('/pitches/promotion_pitches')
 def promotion_pitches():
