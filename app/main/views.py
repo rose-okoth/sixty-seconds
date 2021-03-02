@@ -19,10 +19,10 @@ def index():
     # Getting reviews by category
     interview_pitches = Pitch.get_pitches('interview')
     project_pitches = Pitch.get_pitches('project')
-    promotion_pitches = Pitch.get_pitches('promotion')
+    advertisement_pitches = Pitch.get_pitches('advertisement')
 
 
-    return render_template('index.html',title = title, interview = interview_pitches, product = project_pitches, promotion = promotion_pitches)
+    return render_template('index.html',title = title, interview = interview_pitches, project = project_pitches, advertisement = advertisement_pitches)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -94,16 +94,16 @@ def interview_pitches():
 @main.route('/pitches/project_pitches')
 def project_pitches():
 
-    pitches = Pitch.get_pitches('product')
+    pitches = Pitch.get_pitches('project')
 
     return render_template("project_pitches.html", pitches = pitches)
 
-@main.route('/pitches/promotion_pitches')
-def promotion_pitches():
+@main.route('/pitches/advertisement_pitches')
+def advertisement_pitches():
 
-    pitches = Pitch.get_pitches('promotion')
+    pitches = Pitch.get_pitches('advertisement')
 
-    return render_template("promotion_pitches.html", pitches = pitches)
+    return render_template("advertisement_pitches.html", pitches = pitches)
 
 @main.route('/pitch/<int:id>', methods = ['GET','POST'])
 def pitch(id):
