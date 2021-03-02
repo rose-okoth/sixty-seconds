@@ -1,4 +1,6 @@
 Hello {{user.username}}
-Welcome to One Minute Pitch
-You have now signed up for the application and can now start sharing your pitches to everyone.
+
+Welcome to Sixty Seconds!
+You've successfully signed up and can now start sharing your pitches to everyone.
+
 Good luck.
