@@ -38,9 +38,10 @@ Rose Okoth.
    * ` $ curl https://bootstrap.pypa.io/get-pip.py | python `
 
 1. Installing Flask and other Modules
-   * ` $ python3 -m pip install Flask`
-   * ` $ python3 -m pip install Flask-Bootstrap`
+   * ` $ python3 -m pip install flask`
+   * ` $ python3 -m pip install flask-bootstrap`
    * ` $ python3 -m pip install flask-script`
+   * ` $ pip install -r requirements.txt`
 
 1. To run the application, in your terminal:
     *  `$ chmod +x start.sh`
