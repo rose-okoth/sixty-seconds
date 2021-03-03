@@ -1,6 +1,10 @@
-Hello {{user.username}}
+Hello, {{user.username}}
 
 Welcome to Sixty Seconds!
-You've successfully signed up and can now start sharing your pitches to everyone.
 
-Good luck.
+Your account has successfully been created.
+
+You can now share your pitches with everyone.
+
+Regards,
+The Sixty Seconds Team.
